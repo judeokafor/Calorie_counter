@@ -1,0 +1,224 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    transform: scale(1);
+    transition: transform 250ms ease;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15px auto;
+    /* 15% from the top and centered */
+    height: auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 50%;
+    /* Could be more or less, depending on screen size */
+    /* background-color: white; */
+    border-radius: 4px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transform: scale(1);
+    transition: transform 250ms ease;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-weight: bold;
+    position: relative;
+    float: right;
+    font-size: 18px;
+    transition: transform 500ms ease;
+    z-index: 11;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    color: #da1d30;
+    transform: rotate(540deg);
+}
+
+.button {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    letter-spacing: .5px;
+    -webkit-transition: .3s ease-out;
+    transition: .3s ease-out;
+    cursor: pointer;
+    display: inline-block;
+    height: 2rem;
+    line-height: 1rem;
+    vertical-align: middle;
+    position: relative;
+    padding: 2% 2%;
+    font-size: 0.75rem;
+    font-weight: 400;
+    background-color: transparent;
+    text-transform: uppercase;
+    border: none !important;
+
+}
+
+.blue-button:hover {
+    font-size: 0.8rem;
+    background-color: #b8cbf5;
+    color: #046380;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.red-button:hover {
+    font-size: 0.8rem;
+    background-color: #f7bfc4;
+    color: #da1d30;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.green-button:hover {
+    font-size: 0.8rem;
+    color: rgb(4, 163, 4);
+    background-color: rgb(197, 245, 211);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover:before {
+    width: 100%;
+
+}
+
+/* tooltip css */
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* fade in text */
+#test p {
+    margin-top: 25px;
+    /* font-size: 21px; */
+    text-align: center;
+
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 5s;
+    /* Firefox < 16 */
+    -ms-animation: fadein 5s;
+    /* Internet Explorer */
+    -o-animation: fadein 5s;
+    /* Opera < 12.1 */
+    animation: fadein 5s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
